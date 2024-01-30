@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "Be Vietnam Pro", sans-serif;
+  border: none;
+}
+body {
+  background-image: url(Imgs/bg-image.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.icon {
+  align-self: flex-start;
+  margin: 1rem 4rem;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+}
+#container h1 {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+  max-width: 50%;
+  margin: auto;
+  padding-top: 2rem;
+}
+#container h3 {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+  line-height: 3rem;
+  padding-top: 1rem;
+}
+.box {
+  max-width: 800px;
+  background-color: rgba(248, 250, 252, 0.2);
+  border-radius: 20px;
+  padding: 30px 40px;
+  align-self: center;
+  margin: 4.5rem 0 5rem 0;
+}
+.form-label {
+  font-size: 14px;
+}
+.form-control,
+.form-select {
+  padding: 22px;
+  border-radius: 15px;
+  border-style: none;
+}
+#name::placeholder,
+#email::placeholder {
+  color: #cdd5e0;
+  font-weight: 600;
+}
+select.form-select,
+#message::placeholder {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111729;
+}
+textarea {
+  resize: none;
+  height: 220px;
+  margin-bottom: 0.5rem;
+}
+.btn-light {
+  background-color: #ffffff;
+  font-size: 20px;
+  color: #4036a9;
+  font-weight: 700;
+  padding: 22px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .box {
+    max-width: 100%;
+  }
+  body {
+    padding: 20px;
+  }
+  #container h1 {
+    font-size: 46px;
+    max-width: 420px;
+  }
+  #container h3 {
+    font-size: 20px;
+    max-width: 420px;
+    line-height: 30px;
+  }
+  .icon {
+    margin: 0 0 0 1rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .box {
+    max-width: 100%;
+    padding-bottom: 110px;
+  }
+  .icon {
+    margin: 0;
+  }
+  #container h1 {
+    font-size: 46px;
+  }
+  #container h3 {
+    max-width: 420px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
